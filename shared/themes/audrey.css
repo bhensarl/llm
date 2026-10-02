@@ -1,0 +1,58 @@
+/*
+ * AUDREY: "Garden"
+ * Bright and friendly for a 10-year-old: blush and lavender backgrounds, raspberry for actions,
+ * violet for buttons on the question card, rounded display type, soft "sticker" shadows and a
+ * sparkle trim. Progress is a flower that blooms petal by petal.
+ */
+[data-theme="audrey"] {
+  color-scheme: light;
+
+  --bg: #FFF6FB; --bg-glow: #F1E4FF; --bg-glow-0: rgba(241, 228, 255, 0);
+  --ink: #3A1F5C; --ink-mute: #735C90; --line: rgba(122, 76, 190, .2);
+  --w1: rgba(122, 76, 190, .06); --w2: rgba(122, 76, 190, .10); --w3: rgba(122, 76, 190, .17); --w4: rgba(122, 76, 190, .30);
+  --shadow: rgba(122, 76, 190, .22);
+
+  --accent: #F0529C; --accent-hi: #FF8EC2; --accent-lo: #B8317A; --accent-ink: #2B1245;
+  --accent-soft: rgba(240, 82, 156, .10); --accent-soft-line: rgba(240, 82, 156, .38);
+  --accent-text: #C2276F; --accent-text-2: #8E3FD6;
+  --pop-bg: #FFFFFF; --pop-line: rgba(122, 76, 190, .25);
+
+  --paper-1: #FFFFFF; --paper-2: #FCF4FF; --paper-3: #F3E9FF;
+  --paper-ink: #2B1245; --paper-mute: #6B5488; --paper-line: rgba(122, 76, 190, .28);
+  --paper-inset: rgba(122, 76, 190, .07); --paper-rim: rgba(122, 76, 190, .16);
+  --input-bg: #FFFFFF; --input-ink: #2B1245; --input-ph: #9B86B8; --input-line: rgba(122, 76, 190, .45); --input-ro-bg: #F4ECFF;
+
+  --action: #6A3FDB; --action-hi: #9269F2; --action-lo: #5B31C4; --action-ink: #FFFFFF; --action-edge: #43208F; --action-ring: rgba(123, 77, 232, .28);
+
+  --ok: #1FB985; --ok-deep: #0B7A56; --ok-glow: rgba(31, 185, 133, .4); --ok-soft: rgba(11, 122, 86, .12);
+  --warn: #FFB020; --warn-deep: #8A5200; --warn-glow: rgba(255, 176, 32, .4); --warn-soft: rgba(255, 176, 32, .22);
+  --bad: #F0526A; --bad-deep: #B3213F; --bad-glow: rgba(240, 82, 106, .35); --bad-soft: rgba(179, 33, 63, .11);
+  --focus: #7B4DE8; --hint-bg: rgba(123, 77, 232, .12); --hint-ink: #5B31C4; --glow-key: rgba(240, 82, 156, .38);
+
+  --font-display: 'Fredoka', 'Baloo 2', 'Nunito', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display-weight: 600;
+
+  --r-card: 26px; --r-tablet: 32px; --r-btn: 20px; --r-input: 18px; --r-chip: 999px;
+  --band: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='24' viewBox='0 0 56 24'%3E%3Cpath d='M10 3l1.5 6.5L18 11l-6.5 1.5L10 19l-1.5-6.5L2 11l6.5-1.5z' fill='%23F0529C'/%3E%3Ccircle cx='28' cy='12' r='3' fill='%237B4DE8'/%3E%3Cpath d='M44 6l1 4 4 1-4 1-1 4-1-4-4-1 4-1z' fill='%23FFC93C'/%3E%3C/svg%3E");
+  --band-h: 24px; --band-line: transparent;
+
+  --tint-s: 72%; --tint-fg-l: 40%; --tint-a: .2;
+
+  --hero-lit-1: #FF9BC9; --hero-lit-2: #F0529C; --hero-lit-stroke: #C2276F;
+  --hero-dim-1: #EFE3FF; --hero-dim-2: #F7EEFF; --hero-dim-stroke: #C4AEF2;
+  --hero-stair-1: #FFFFFF; --hero-stair-2: #E8D9FF; --hero-stair-stroke: #C4AEF2;
+  --hero-joint: rgba(122, 76, 190, .2); --hero-ink: #2B1245; --hero-snow: #FFFFFF;
+  --hero-leaf: #3DB37A; --hero-leaf-deep: #2A8F5E; --hero-center: #FFC93C;
+}
+
+[data-theme="audrey"] .panel,
+[data-theme="audrey"] .portal { background: rgba(255, 255, 255, .86); border: 2px solid var(--line); box-shadow: 0 6px 0 rgba(122, 76, 190, .10); }
+[data-theme="audrey"] .tablet { box-shadow: 0 -6px 0 var(--paper-rim) inset, 0 8px 0 rgba(122, 76, 190, .14), 0 22px 40px var(--shadow); }
+[data-theme="audrey"] .tablet.key { box-shadow: 0 0 0 3px var(--accent), 0 0 34px var(--glow-key), 0 -6px 0 var(--paper-rim) inset, 0 22px 40px var(--shadow); }
+[data-theme="audrey"] .tablet.ok { box-shadow: 0 0 0 4px var(--ok), 0 0 40px var(--ok-glow), 0 -6px 0 var(--paper-rim) inset, 0 22px 40px var(--shadow); }
+[data-theme="audrey"] .tablet.part { box-shadow: 0 0 0 4px var(--warn), 0 0 40px var(--warn-glow), 0 -6px 0 var(--paper-rim) inset, 0 22px 40px var(--shadow); }
+[data-theme="audrey"] .tablet.bad { box-shadow: 0 0 0 4px var(--bad), 0 0 40px var(--bad-glow), 0 -6px 0 var(--paper-rim) inset, 0 22px 40px var(--shadow); }
+[data-theme="audrey"] .btn { font-weight: 700; }
+[data-theme="audrey"] .btn.primary { box-shadow: 0 5px 0 var(--accent-lo), 0 12px 22px rgba(240, 82, 156, .28); }
+[data-theme="audrey"] .scrim { background: rgba(58, 31, 92, .45); }

@@ -1,0 +1,85 @@
+/*
+ * BRETTON: "Arena"
+ * A game lobby for a 12-year-old: near-black navy, electric orange for actions, cyan for scores and
+ * headings, angular display type, uppercase labels, HUD corner brackets on panels.
+ * Questions sit on cool steel-white cards so they pop against the dark.
+ */
+[data-theme="bretton"] {
+  color-scheme: dark;
+
+  --bg: #070B16; --bg-glow: #17265F; --bg-glow-0: rgba(23, 38, 95, 0);
+  --ink: #EAF0FF; --ink-mute: #98A6CF; --line: rgba(255, 255, 255, .14);
+  --w1: rgba(255, 255, 255, .06); --w2: rgba(255, 255, 255, .10); --w3: rgba(255, 255, 255, .16); --w4: rgba(255, 255, 255, .28);
+  --shadow: rgba(0, 0, 0, .45);
+
+  --accent: #FF7A1A; --accent-hi: #FFA24D; --accent-lo: #B84E00; --accent-ink: #1A0B00;
+  --accent-soft: rgba(255, 122, 26, .12); --accent-soft-line: rgba(255, 122, 26, .42);
+  --accent-text: #6FE3FF; --accent-text-2: #FF9B4A;
+  --pop-bg: #0F1730; --pop-line: rgba(255, 255, 255, .18);
+
+  --paper-1: #F6F8FF; --paper-2: #E7EDFB; --paper-3: #D6DFF3;
+  --paper-ink: #0E1630; --paper-mute: #4B5A85; --paper-line: rgba(14, 22, 48, .28);
+  --paper-inset: rgba(14, 22, 48, .07); --paper-rim: rgba(14, 22, 48, .18);
+  --input-bg: #FFFFFF; --input-ink: #0E1630; --input-ph: #7683AD; --input-line: rgba(14, 22, 48, .42); --input-ro-bg: #DEE6F8;
+
+  --action: #1F55E8; --action-hi: #4C80FF; --action-lo: #1747C9; --action-ink: #FFFFFF; --action-edge: #0E2C8A; --action-ring: rgba(31, 85, 232, .3);
+
+  --ok: #2FD39B; --ok-deep: #0A7A57; --ok-glow: rgba(47, 211, 155, .45); --ok-soft: rgba(10, 122, 87, .14);
+  --warn: #FFB020; --warn-deep: #8A5200; --warn-glow: rgba(255, 176, 32, .4); --warn-soft: rgba(255, 176, 32, .2);
+  --bad: #FF5470; --bad-deep: #B3213F; --bad-glow: rgba(255, 84, 112, .4); --bad-soft: rgba(179, 33, 63, .13);
+  --focus: #6FE3FF; --hint-bg: rgba(31, 85, 232, .12); --hint-ink: #1747C9; --glow-key: rgba(255, 122, 26, .42);
+
+  --font-display: 'Chakra Petch', 'Rajdhani', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'Lexend', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display-weight: 700;
+
+  --r-card: 14px; --r-tablet: 6px 26px 6px 26px; --r-btn: 10px; --r-input: 10px; --r-chip: 8px;
+  --band: repeating-linear-gradient(115deg, #FF7A1A 0 12px, #0B1226 12px 24px); --band-h: 8px; --band-line: rgba(255, 122, 26, .5);
+
+  --tint-s: 90%; --tint-fg-l: 70%; --tint-a: .16;
+
+  --hero-lit-1: #FFB066; --hero-lit-2: #FF7A1A; --hero-lit-stroke: #B84E00;
+  --hero-dim-1: #1A2756; --hero-dim-2: #0F1836; --hero-dim-stroke: #33478F;
+  --hero-stair-1: #E7EDFB; --hero-stair-2: #B9C6E8; --hero-stair-stroke: #6C7DB0;
+  --hero-joint: rgba(7, 11, 22, .4); --hero-ink: #070B16; --hero-snow: #EAF0FF;
+}
+
+/* flair that belongs to Bretton's own shell (a quiz "world" can opt out by setting data-world) */
+[data-theme="bretton"]:not([data-world]) .brand-name,
+[data-theme="bretton"]:not([data-world]) .rank-name,
+[data-theme="bretton"]:not([data-world]) .panel h2,
+[data-theme="bretton"]:not([data-world]) .score b,
+[data-theme="bretton"]:not([data-world]) .stat b,
+[data-theme="bretton"]:not([data-world]) .tile b,
+[data-theme="bretton"]:not([data-world]) .verdict,
+[data-theme="bretton"]:not([data-world]) .sum-head h1,
+[data-theme="bretton"]:not([data-world]) .banner b,
+[data-theme="bretton"]:not([data-world]) .lib h1,
+[data-theme="bretton"]:not([data-world]) .sheet h2,
+[data-theme="bretton"] .hub-title,
+[data-theme="bretton"] .lvl-name,
+[data-theme="bretton"] .view-h,
+[data-theme="bretton"] .app-title,
+[data-theme="bretton"] .portal-name { text-transform: uppercase; letter-spacing: .03em; }
+
+/* HUD corner brackets on panels and portals (four short gradient lines, one per corner) */
+[data-theme="bretton"]:not([data-world]) .panel {
+  background-image:
+    linear-gradient(var(--accent-text), var(--accent-text)), linear-gradient(var(--accent-text), var(--accent-text)),
+    linear-gradient(var(--accent-text), var(--accent-text)), linear-gradient(var(--accent-text), var(--accent-text)),
+    linear-gradient(180deg, var(--w2), var(--w1));
+  background-position: left top, left top, right bottom, right bottom, 0 0;
+  background-size: 18px 2px, 2px 18px, 18px 2px, 2px 18px, auto;
+  background-repeat: no-repeat;
+}
+[data-theme="bretton"] .portal {
+  background-image:
+    linear-gradient(var(--accent-text), var(--accent-text)), linear-gradient(var(--accent-text), var(--accent-text)),
+    linear-gradient(var(--accent-text), var(--accent-text)), linear-gradient(var(--accent-text), var(--accent-text)),
+    radial-gradient(520px 220px at 80% -10%, var(--bg-glow), var(--bg-glow-0));
+  background-position: left top, left top, right bottom, right bottom, 0 0;
+  background-size: 18px 2px, 2px 18px, 18px 2px, 2px 18px, auto;
+  background-repeat: no-repeat;
+}
+[data-theme="bretton"]:not([data-world]) .btn { text-transform: uppercase; letter-spacing: .06em; font-weight: 700; font-size: .95rem; }
+[data-theme="bretton"]:not([data-world]) .btn.quiet { text-transform: none; letter-spacing: 0; font-weight: 500; }

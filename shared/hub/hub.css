@@ -1,0 +1,77 @@
+/* Quest Hall kid hub: subjects, quiz list, level card. Token-driven, so each kid theme restyles it. */
+.hub-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px 10px; }
+.hub-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; }
+.hub-brand-icon { width: 36px; height: 36px; flex: none; color: var(--accent); }
+.hub-brand-icon svg { width: 100%; height: 100%; display: block; }
+.hub-title { font: var(--display-weight, 400) clamp(1.05rem, 4.8vw, 1.45rem)/1.1 var(--font-display); color: var(--accent-text); }
+.switch { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border-radius: var(--r-btn); background: var(--w1); border: 1px solid var(--line); text-decoration: none; font-size: .88rem; font-weight: 500; flex: none; }
+.switch:hover { background: var(--w2); }
+.switch svg { width: 18px; height: 18px; }
+
+.hub-hero { display: grid; gap: 18px; margin-block: 6px 22px; grid-template-columns: minmax(0, 1fr); }
+.lvl-name { font: var(--display-weight, 400) clamp(1.9rem, 7vw, 2.6rem)/1.05 var(--font-display); color: var(--accent-text); margin: 4px 0 10px; }
+.hub-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-content: center; }
+.stat b { display: block; font: var(--display-weight, 400) 1.6rem/1.1 var(--font-display); color: var(--accent-text); }
+.stat span { display: block; font-size: .8rem; color: var(--ink-mute); margin-top: 2px; }
+.xp-line { margin-top: 8px; font-size: .92rem; color: var(--ink-mute); }
+.xp-line b { color: var(--ink); font-weight: 600; }
+.continue { display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 14px 16px; border-radius: var(--r-card); background: linear-gradient(180deg, var(--accent-hi), var(--accent)); color: var(--accent-ink); box-shadow: 0 4px 0 var(--accent-lo), 0 12px 24px var(--shadow); min-width: 0; }
+.continue:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--accent-lo); }
+.continue > svg { width: 22px; height: 22px; flex: none; }
+.continue-play { flex: none; width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, .3); }
+.continue-play svg { width: 22px; height: 22px; }
+.continue-text { flex: 1; min-width: 0; display: block; }
+.continue-text small { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+.continue-text b { display: block; font-size: 1.1rem; line-height: 1.2; overflow-wrap: anywhere; }
+.continue-text i { display: block; font-style: normal; font-size: .82rem; opacity: .85; }
+.hub-nudge { color: var(--ink-mute); align-self: center; }
+
+.view-h { font: var(--display-weight, 400) clamp(1.5rem, 5.5vw, 2.1rem)/1.1 var(--font-display); color: var(--accent-text); margin-bottom: 14px; }
+.view-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.view-head .view-h { margin-bottom: 2px; }
+.crumb { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; text-decoration: none; color: var(--ink-mute); font-weight: 500; font-size: .92rem; margin-bottom: 4px; }
+.crumb:hover { color: var(--ink); }
+.crumb svg { width: 18px; height: 18px; }
+
+.ico { flex: none; width: 52px; height: 52px; border-radius: var(--r-btn); display: grid; place-items: center; background: hsl(var(--h, 210) var(--tint-s, 80%) 60% / var(--tint-a, .18)); color: hsl(var(--h, 210) var(--tint-s, 80%) var(--tint-fg-l, 70%)); }
+.ico svg { width: 28px; height: 28px; }
+
+.subject-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.subject-tile { display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit; padding: 16px; transition: transform .12s; min-width: 0; }
+.subject-tile:hover { transform: translateY(-2px); }
+.subject-tile:active { transform: translateY(1px); }
+.subject-tile.empty { opacity: .62; }
+.st-body { display: block; min-width: 0; }
+.st-body b { display: block; font-size: 1.08rem; line-height: 1.2; }
+.st-blurb { display: block; font-size: .8rem; color: var(--ink-mute); line-height: 1.35; margin-top: 3px; }
+.st-meta { display: block; font-size: .78rem; font-weight: 600; color: var(--accent-text-2); margin-top: 8px; }
+.st-bar { height: 8px; margin-top: auto; }
+
+.app-list { display: grid; gap: 14px; }
+.app-card { display: grid; gap: 14px; text-decoration: none; color: inherit; grid-template-columns: minmax(0, 1fr); }
+.app-main { display: grid; gap: 8px; min-width: 0; }
+.app-title { font: var(--display-weight, 400) 1.35rem/1.15 var(--font-display); color: var(--accent-text); }
+.app-blurb { color: var(--ink-mute); font-size: .92rem; line-height: 1.45; }
+.app-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.app-prog { display: grid; gap: 6px; font-size: .82rem; color: var(--ink-mute); }
+.app-prog .bar { height: 8px; }
+.app-go { align-self: center; justify-self: stretch; pointer-events: none; }
+.pill { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: var(--accent); color: var(--accent-ink); font-style: normal; vertical-align: 2px; }
+.pill.soft { background: var(--w2); color: var(--ink-mute); text-transform: none; letter-spacing: 0; font-weight: 500; font-size: .76rem; }
+.empty-note { text-align: center; padding: 28px 20px; display: grid; gap: 6px; }
+
+.hub-foot { margin-top: 36px; display: grid; justify-items: center; gap: 12px; text-align: center; font-size: .78rem; color: var(--ink-mute); }
+.hub-foot .school { color: var(--ink-mute); }
+
+@media (min-width: 560px) {
+  .subject-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .app-card { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+  .app-go { justify-self: end; }
+}
+@media (min-width: 780px) {
+  .hub-hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; }
+  .hub-hero .continue, .hub-hero .hub-nudge { grid-column: 1 / -1; }
+}
+@media (min-width: 1000px) {
+  .subject-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

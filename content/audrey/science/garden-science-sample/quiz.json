@@ -1,0 +1,58 @@
+{
+ "id": "garden-science-sample",
+ "title": "Garden Science",
+ "subtitle": "Sample quiz about plants and flowers",
+ "source": "a built-in sample quiz, not a school study guide",
+ "priority": {
+  "label": "Star",
+  "blurb": "the star questions"
+ },
+ "sections": [
+  {
+   "id": "parts",
+   "name": "Parts of a Plant",
+   "tag": "Parts"
+  },
+  {
+   "id": "life",
+   "name": "How Plants Live",
+   "tag": "Life"
+  }
+ ],
+ "scopes": [
+  {
+   "id": "parts",
+   "name": "Parts of a Plant",
+   "sections": [
+    "parts"
+   ]
+  },
+  {
+   "id": "life",
+   "name": "How Plants Live",
+   "sections": [
+    "life"
+   ]
+  }
+ ],
+ "questions": [
+  {"id":"p1","section":"parts","num":1,"key":true,"q":"What part of a plant takes in water from the soil?","a":"The roots","k":"root | roots"},
+  {"id":"p2","section":"parts","num":2,"key":true,"q":"What part of a plant holds it up and carries water to the leaves?","a":"The stem","k":"stem | stems | stalk | trunk"},
+  {"id":"p3","section":"parts","num":3,"key":false,"q":"What do we call the colorful parts of a flower that attract insects?","a":"Petals","k":"petal | petals"},
+  {"id":"p4","section":"parts","num":4,"key":true,"q":"What part of a plant makes food from sunlight?","a":"The leaves","k":"leaf | leaves | leafs"},
+  {"id":"p5","section":"parts","num":5,"key":false,"q":"What is the male part of a flower that makes pollen?","a":"The stamen","k":"stamen | stamens"},
+  {"id":"p6","section":"parts","num":6,"key":false,"q":"What is the female part of a flower, where seeds are made?","a":"The pistil","k":"pistil | pistils | carpel"},
+  {"id":"p7","section":"parts","num":7,"key":true,"q":"What do seeds grow into?","a":"New plants","k":"plant | plants | seedling | seedlings | sprout | flower | flowers | tree | trees"},
+  {"id":"p8","section":"parts","num":8,"key":false,"q":"What is a baby plant that has just sprouted from a seed called?","a":"A seedling","k":"seedling | seedlings | sprout | sprouts"},
+  {"id":"l1","section":"life","num":1,"key":true,"q":"What is the process plants use to make food from sunlight called?","a":"Photosynthesis","k":"photosynthesis"},
+  {"id":"l2","section":"life","num":2,"key":true,"q":"What gas do plants take in from the air to make food?","a":"Carbon dioxide","k":"carbon dioxide | carbon | co2"},
+  {"id":"l3","section":"life","num":3,"key":true,"q":"What gas do plants give off that we need to breathe?","a":"Oxygen","k":"oxygen | o2"},
+  {"id":"l4","section":"life","num":4,"key":false,"q":"What green substance in leaves captures sunlight?","a":"Chlorophyll","k":"chlorophyll"},
+  {"id":"l5","section":"life","num":5,"key":true,"q":"Name two things a plant needs to grow.","a":"Sunlight, water, air, and nutrients from the soil (any two)","k":"Sunlight::sun | sunlight | light | sunshine & Water::water | rain & Air::air | carbon dioxide | co2 & Soil::soil | nutrients | nutrient | minerals | dirt","need":2},
+  {"id":"l6","section":"life","num":6,"key":false,"q":"What do bees carry from flower to flower that helps plants make seeds?","a":"Pollen","k":"pollen"},
+  {"id":"l7","section":"life","num":7,"key":false,"q":"What is it called when pollen moves from one flower to another?","a":"Pollination","k":"pollination | pollinate | pollinating | pollinated"},
+  {"id":"l8","section":"life","num":8,"key":false,"q":"What do we call trees that keep their leaves all year long?","a":"Evergreens","k":"evergreen | evergreens | conifer | conifers"},
+  {"id":"l9","section":"life","num":9,"key":false,"q":"What do we call trees that lose their leaves in the fall?","a":"Deciduous trees","k":"deciduous"},
+  {"id":"l10","section":"life","num":10,"key":true,"q":"What is the very first stage of a plant’s life cycle?","a":"A seed","k":"seed | seeds"}
+ ]
+}

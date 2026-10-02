@@ -1,0 +1,41 @@
+/*
+ * Quest Hall landing page: "Who's studying today?"
+ * The page itself is neutral. Each portal carries data-theme, so it is drawn in that kid's own theme.
+ */
+:root {
+  color-scheme: dark;
+  --bg: #0C1020; --bg-glow: #2A2F6B; --bg-glow-0: rgba(42, 47, 107, 0);
+  --ink: #F2F4FF; --ink-mute: #A9B2D4; --line: rgba(255, 255, 255, .14);
+  --w1: rgba(255, 255, 255, .06); --w2: rgba(255, 255, 255, .10); --w3: rgba(255, 255, 255, .16); --w4: rgba(255, 255, 255, .28);
+  --shadow: rgba(0, 0, 0, .45);
+  --accent: #FFD166; --accent-hi: #FFE29A; --accent-lo: #B8892B; --accent-ink: #231800;
+  --accent-text: #FFE29A; --accent-text-2: #FFD166; --accent-soft: rgba(255, 209, 102, .12); --accent-soft-line: rgba(255, 209, 102, .4);
+  --focus: #9CB6FF;
+  --font-display: 'Lexend', system-ui, sans-serif; --font-body: 'Lexend', system-ui, sans-serif; --display-weight: 700;
+  --r-card: 20px; --r-btn: 14px; --r-chip: 999px;
+  --band: none; --band-h: 0px; --band-line: transparent;
+}
+.root-wrap { max-width: 920px; margin-inline: auto; padding: 40px 16px 28px; }
+.root-head { text-align: center; margin-bottom: 28px; }
+.root-head .eyebrow { letter-spacing: .2em; }
+.root-head h1 { font: 700 clamp(2rem, 8vw, 3.2rem)/1.08 var(--font-display); margin: 8px 0 8px; }
+.root-head p { color: var(--ink-mute); }
+.portals { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+.portal {
+  display: grid; gap: 10px; align-content: start; text-decoration: none; padding: 26px 24px 22px;
+  background: var(--bg); color: var(--ink); border: 2px solid var(--accent); border-radius: var(--r-card);
+  background-image: radial-gradient(520px 220px at 80% -10%, var(--bg-glow), var(--bg-glow-0));
+  box-shadow: 0 18px 40px var(--shadow); transition: transform .15s;
+  font-family: var(--font-body);
+}
+.portals > [data-theme] > .portal { background-color: var(--bg); border-color: var(--accent); }
+.portal:hover { transform: translateY(-3px); }
+.portal:active { transform: translateY(1px); }
+.portal-icon { width: 60px; height: 60px; color: var(--accent); }
+.portal-icon svg { width: 100%; height: 100%; display: block; }
+.portal-name { font: var(--display-weight, 400) 2.4rem/1 var(--font-display); color: var(--accent-text); }
+.portal-title { color: var(--ink-mute); font-size: 1rem; }
+.portal .school { margin-top: 6px; }
+.portal .btn { justify-self: start; margin-top: 8px; pointer-events: none; }
+.root-foot { text-align: center; margin-top: 34px; font-size: .8rem; color: var(--ink-mute); }
+@media (min-width: 720px) { .portals { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

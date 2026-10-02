@@ -1,0 +1,12 @@
+{
+  "title": "Garden Science",
+  "subject": "science",
+  "type": "quiz",
+  "sample": true,
+  "blurb": "A sample quiz about plants and flowers, so you can try the game. Real study-guide quizzes will show up here too.",
+  "added": "2026-10-02",
+  "order": 90,
+  "tags": [
+    "Sample"
+  ]
+}

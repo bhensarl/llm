@@ -1,0 +1,16 @@
+{
+  "name": "quest-hall",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Study games and tests for Bretton and Audrey. A static site, built with plain Node and deployed on Vercel.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node scripts/test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "new:quiz": "node scripts/new-quiz.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

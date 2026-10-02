@@ -1,0 +1,34 @@
+/*
+ * World skin for Ziggurat Quest: the Ishtar Gate at night. Lapis-glazed brick, gold rosettes, clay tablets.
+ * Layered on top of Bretton's theme (html has data-theme="bretton" and data-world="ziggurat-quest").
+ */
+html[data-world="ziggurat-quest"] {
+  --bg: #0A1431; --bg-glow: #1D3F90; --bg-glow-0: rgba(29, 63, 144, 0);
+  --ink: #F3EEDD; --ink-mute: #A9B6D8;
+
+  --accent: #E4B14E; --accent-hi: #F7D98B; --accent-lo: #A9772A; --accent-ink: #2A1B06;
+  --accent-soft: rgba(228, 177, 78, .10); --accent-soft-line: rgba(228, 177, 78, .35);
+  --accent-text: #F7D98B; --accent-text-2: #E4B14E;
+  --pop-bg: #12265A;
+
+  --paper-1: #F4E5C2; --paper-2: #EBD7AE; --paper-3: #DDC693;
+  --paper-ink: #2B1D10; --paper-mute: #5F4A2D; --paper-line: rgba(95, 70, 30, .3);
+  --paper-inset: rgba(43, 29, 16, .09); --paper-rim: rgba(120, 85, 30, .28);
+  --input-bg: #FBF3DE; --input-ink: #2B1D10; --input-ph: #8B7752; --input-line: rgba(95, 70, 30, .45); --input-ro-bg: #EFE2BF;
+
+  --action: #1E49B0; --action-hi: #3A6FE0; --action-lo: #163A90; --action-ink: #FFFFFF; --action-edge: #0F2A6E; --action-ring: rgba(15, 42, 110, .35);
+  --focus: #7FA3F5; --hint-bg: rgba(37, 82, 184, .12); --hint-ink: #1B3A86; --glow-key: rgba(228, 177, 78, .38);
+
+  --font-display: 'Alfa Slab One', 'Rockwell', 'Georgia', serif;
+  --display-weight: 400;
+  --glyph-font: 'Noto Sans Cuneiform', 'Segoe UI Historic', serif;
+
+  --r-card: 22px; --r-tablet: 28px 32px 26px 30px / 30px 26px 32px 28px; --r-btn: 15px; --r-input: 16px; --r-chip: 999px;
+  --band: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='-14 -14 28 28'%3E%3Cg fill='%23E4B14E'%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(45)'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(90)'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(135)'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(180)'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(225)'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(270)'/%3E%3Cellipse rx='2.4' ry='5.6' cy='-7.6' transform='rotate(315)'/%3E%3C/g%3E%3Ccircle r='4' fill='%23E4B14E'/%3E%3Ccircle r='2' fill='%230A1431'/%3E%3C/svg%3E");
+  --band-h: 28px; --band-line: rgba(228, 177, 78, .35);
+
+  --hero-lit-1: #F7D98B; --hero-lit-2: #B9822C; --hero-lit-stroke: #8C5F1B;
+  --hero-dim-1: #1B3A86; --hero-dim-2: #12285F; --hero-dim-stroke: #2A4CA3;
+  --hero-stair-1: #F2E2BD; --hero-stair-2: #C9AE78; --hero-stair-stroke: #8C6B2F;
+  --hero-joint: rgba(10, 20, 49, .38); --hero-ink: #0A1431;
+}

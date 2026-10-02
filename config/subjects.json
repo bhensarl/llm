@@ -1,0 +1,10 @@
+[
+  {"id": "history", "name": "History", "icon": "history", "blurb": "Ancient worlds, kings and empires", "hue": 38},
+  {"id": "math", "name": "Math", "icon": "math", "blurb": "Numbers, facts and problem solving", "hue": 210},
+  {"id": "science", "name": "Science", "icon": "science", "blurb": "How the world works", "hue": 150},
+  {"id": "bible", "name": "Bible", "icon": "bible", "blurb": "Scripture, stories and memory work", "hue": 275},
+  {"id": "latin", "name": "Latin", "icon": "latin", "blurb": "Vocabulary, endings and translation", "hue": 355},
+  {"id": "english", "name": "English", "icon": "english", "blurb": "Grammar, spelling and writing", "hue": 175},
+  {"id": "literature", "name": "Literature", "icon": "literature", "blurb": "Books, characters and plots", "hue": 320},
+  {"id": "geography", "name": "Geography", "icon": "geography", "blurb": "Maps, places and people", "hue": 95}
+]

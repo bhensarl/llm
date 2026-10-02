@@ -1,0 +1,294 @@
+{
+ "id": "ziggurat-quest",
+ "title": "Ziggurat Quest",
+ "subtitle": "Mesopotamia and the Near-Eastern empires",
+ "source": "Bretton’s study guide, dated 9/30/26 (Mesopotamia Q35–80 and Chapters 16–Epilogue)",
+ "priority": {
+  "label": "Key",
+  "blurb": "the questions your teacher circled"
+ },
+ "world": {
+  "hero": "ziggurat",
+  "heroLabel": "Your ziggurat",
+  "brandIcon": "zig",
+  "glyph": "𒀭",
+  "glyphFont": "Noto Sans Cuneiform",
+  "ranks": [
+   {
+    "n": "Edubba Student",
+    "d": "Learning in the Tablet House",
+    "xp": 0
+   },
+   {
+    "n": "Scribe",
+    "d": "Keeper of the clay tablets",
+    "xp": 2500
+   },
+   {
+    "n": "Diviner",
+    "d": "Reader of the gods’ omens",
+    "xp": 7000
+   },
+   {
+    "n": "Priest of Enlil",
+    "d": "Servant of the gods",
+    "xp": 13000
+   },
+   {
+    "n": "Satrap",
+    "d": "Governor of a Persian province",
+    "xp": 21000
+   },
+   {
+    "n": "King of Justice",
+    "d": "Lawgiver, like Hammurabi",
+    "xp": 31000
+   },
+   {
+    "n": "Great King",
+    "d": "One of the Big Five",
+    "xp": 43000
+   },
+   {
+    "n": "Emperor",
+    "d": "Ruler of all, like Sargon",
+    "xp": 58000
+   }
+  ],
+  "badges": {
+   "first": {
+    "n": "First Tablet"
+   },
+   "s6": {
+    "n": "Kindled"
+   },
+   "s12": {
+    "n": "Eternal Flame"
+   },
+   "flawless": {
+    "n": "Flawless Round"
+   },
+   "k25": {
+    "n": "Key Keeper"
+   },
+   "gate": {
+    "n": "Gatekeeper"
+   },
+   "redeem": {
+    "n": "Second Chance"
+   },
+   "scholar": {
+    "n": "Scholar of Two Rivers"
+   }
+  },
+  "quips": {
+   "ok": [
+    "Carved in clay.",
+    "The gods approve.",
+    "Sharp as a scribe’s reed.",
+    "That one is going on a tablet.",
+    "Nailed it.",
+    "Spot on."
+   ],
+   "part": [
+    "You got part of it. Look at what is missing.",
+    "So close. The rest is below.",
+    "Half the tablet is right."
+   ],
+   "bad": [
+    "Not quite. The tablet cracked on that one.",
+    "Missed it. It goes into your Study Pile.",
+    "That one can come back for another try."
+   ],
+   "skip": [
+    "No problem. Read the answer, it will stick next time.",
+    "Good to check. This one goes into your Study Pile."
+   ]
+  },
+  "headlines": {
+   "perfect": "Flawless. The scribes bow to you.",
+   "great": "A scribe’s round.",
+   "good": "Solid work. Keep climbing.",
+   "ok": "Getting there. Study the tablets below.",
+   "low": "Tough round. The tablets below will help.",
+   "replayMissed": "Replay done. Keep at it.",
+   "replayClean": "Redeemed. Every one right."
+  },
+  "confetti": [
+   "--accent",
+   "--accent-hi",
+   "--action-hi",
+   "--focus",
+   "--ok",
+   "--ink"
+  ]
+ },
+ "sections": [
+  {
+   "id": "meso",
+   "name": "Mesopotamia",
+   "tag": "Meso"
+  },
+  {
+   "id": "emp",
+   "name": "Empires & Kings",
+   "tag": "Ch"
+  },
+  {
+   "id": "map",
+   "name": "Map Skills",
+   "tag": "Map"
+  }
+ ],
+ "scopes": [
+  {
+   "id": "meso",
+   "name": "Mesopotamia",
+   "sections": [
+    "meso",
+    "map"
+   ]
+  },
+  {
+   "id": "emp",
+   "name": "Empires & Kings",
+   "sections": [
+    "emp"
+   ]
+  }
+ ],
+ "questions": [
+  {"id":"m35","section":"meso","num":35,"key":false,"q":"As Mesopotamian cities became better organized, what did they do for better protection?","a":"They built walls","k":"wall | walls | fortification | fortifications | fortified | rampart | ramparts | fort | forts"},
+  {"id":"m36","section":"meso","num":36,"key":true,"q":"What language was spoken originally in southern Mesopotamia?","a":"Sumerian","k":"sumerian | sumer | sumeria"},
+  {"id":"m37","section":"meso","num":37,"key":true,"q":"What language was spoken in northern Mesopotamia?","a":"Akkadian","k":"akkadian | akkad | akadian"},
+  {"id":"m38","section":"meso","num":38,"key":false,"q":"Name three things, besides language, that northern and southern Mesopotamia shared.","a":"Types of houses, pottery, writing system, jewelry, gods & goddesses (any three)","k":"Houses::house | houses | housing | homes | home | architecture & Pottery::pottery | pots | ceramics & Writing::writing | cuneiform | script & Jewelry::jewelry | jewellery | jewels | jewel & Gods::god | gods | goddess | goddesses | religion | deities | religious","need":3},
+  {"id":"m39","section":"meso","num":39,"key":false,"q":"Gilgamesh was 2/3 god and 1/3 man. What term do we use for a character like this?","a":"A demigod","k":"demigod | demigods | demi | semigod | half god | semi god | demi god"},
+  {"id":"m40","section":"meso","num":40,"key":true,"q":"Which goddess fell in love with Gilgamesh?","a":"Ishtar","k":"ishtar | inanna"},
+  {"id":"m41","section":"meso","num":41,"key":true,"q":"Why did the gods send the Bull of Heaven?","a":"To punish Gilgamesh","k":"punish | punished | punishment | punishing | revenge | angry | anger | mad | upset | furious | rejected | rejection | rejecting | insulted | insult | refused"},
+  {"id":"m42","section":"meso","num":42,"key":true,"q":"Who was “punished instead”?","a":"Enkidu","k":"enkidu | enkido"},
+  {"id":"m43","section":"meso","num":43,"key":false,"q":"After Enkidu died, what became Gilgamesh’s obsession?","a":"Immortality","k":"immortality | immortal | immortals | forever | eternal | eternity | everlasting | deathless | cheat death | avoid death | never die"},
+  {"id":"m44","section":"meso","num":44,"key":true,"q":"In the Gilgamesh story of the flood, how many days did it rain?","a":"7 days","k":"7"},
+  {"id":"m45","section":"meso","num":45,"key":false,"q":"What was the role of Ut-napishtim in the flood story?","a":"He built the boat and saved mankind and the animals","k":"boat | ark | ship | built | build | saved | rescue | rescued | survived | survivor | animals | mankind | humanity | noah"},
+  {"id":"m46","section":"meso","num":46,"key":false,"q":"Who or what stole the magical plant that would make Gilgamesh young again?","a":"A snake","k":"snake | snakes | serpent | serpents"},
+  {"id":"m47","section":"meso","num":47,"key":true,"q":"What kind of poem is the Gilgamesh story?","a":"An epic","k":"epic | epics"},
+  {"id":"m48","section":"meso","num":48,"key":true,"q":"He was the first “emperor” in history. Who was he?","a":"Sargon","k":"sargon"},
+  {"id":"m49","section":"meso","num":49,"key":true,"q":"What did Sargon do to end a conquered city’s sense of safety and independence?","a":"He tore down the walls","k":"wall | walls | tore | torn | tear | razed | demolish | demolished | knocked"},
+  {"id":"m50","section":"meso","num":50,"key":true,"q":"What did Sargon think of the foreign gods of the city he attacked and conquered?","a":"He prayed to them, believing his victory meant the foreign gods had been on his side too","k":"pray | prayed | praying | prayer | prayers | worship | worshiped | worshipped | worshipping | honor | honored | honour | honoured | respect | respected | side"},
+  {"id":"m51","section":"meso","num":51,"key":true,"q":"What was the name of Sargon’s capital that has never been found?","a":"Agade","k":"agade | akkad"},
+  {"id":"m52","section":"meso","num":52,"key":false,"q":"The Mesopotamians believed the gods had 2 forms. The first was a spirit that lived in nature. Where did the second live?","a":"In the temples that were dedicated to them","k":"temple | temples | statue | statues | shrine | shrines | idol | idols | ziggurat | ziggurats"},
+  {"id":"m53","section":"meso","num":53,"key":true,"q":"All god statues had this decoration, reserved for divine beings. What was it?","a":"Horns","k":"horn | horns | horned"},
+  {"id":"m54","section":"meso","num":54,"key":true,"q":"What did male gods often have on their statues?","a":"Beards","k":"beard | beards | bearded"},
+  {"id":"m55","section":"meso","num":55,"key":false,"q":"Who had the most important job in a Mesopotamian city, and why?","a":"Priests and priestesses, because they served the gods","k":"priest | priests | priestess | priestesses | priesthood"},
+  {"id":"m56","section":"meso","num":56,"key":false,"q":"What did a “diviner” do to understand the will of the gods?","a":"He studied the innards of sacrificed animals","k":"innards | insides | guts | liver | livers | organs | entrails | intestines | animals | animal | sheep | sacrifice | sacrificed | sacrifices | sacrificing | omens | cut open"},
+  {"id":"m57","section":"meso","num":57,"key":false,"q":"On festival days, what did the priests and priestesses do with the statues under their care?","a":"They carried them through the streets of the city to bless the people","k":"carried | carry | carrying | paraded | parade | procession | streets | street | bless | blessed | blessing | marched | march | walked | walk | moved"},
+  {"id":"m58","section":"meso","num":58,"key":true,"q":"Which Mesopotamian king wrote the first laws on clay tablets but was not given credit in history?","a":"King Shulgi","k":"shulgi | sulgi | dungi"},
+  {"id":"m59","section":"meso","num":59,"key":false,"q":"What city was King Shulgi from?","a":"Ur","k":"ur"},
+  {"id":"m60","section":"meso","num":60,"key":false,"q":"Who conquered King Shulgi’s kingdom?","a":"The Amorites","k":"amorite | amorites | amurru"},
+  {"id":"m61","section":"meso","num":61,"key":true,"q":"He was the 6th king of the Amorites and hit it big when he embarked on a conquest of Mesopotamia. Who was he?","a":"Hammurabi","k":"hammurabi | hammurapi"},
+  {"id":"m62","section":"meso","num":62,"key":false,"q":"Whose empire was bigger: Sargon’s or Hammurabi’s?","a":"Sargon’s","k":"sargon"},
+  {"id":"m63","section":"meso","num":63,"key":true,"q":"What was the name of the capital city from which Hammurabi ruled?","a":"Babylon","k":"babylon | babylonia"},
+  {"id":"m64","section":"meso","num":64,"key":false,"q":"Why did Hammurabi call himself the “King of Justice”?","a":"He wiped out everyone’s debt and wrote his code of law","k":"debt | debts | forgave | forgive | forgiven | canceled | cancelled | cancel | wiped | erased | laws | law | code | wrote | written"},
+  {"id":"m65","section":"meso","num":65,"key":true,"q":"We learned about Hammurabi’s 282 laws when this item was found in the 19th century and brought to the Louvre in Paris. What was it?","a":"The Stele of Hammurabi","k":"stele | stela | stella | steele | stelae | code | pillar | slab | stone | monument"},
+  {"id":"m66","section":"meso","num":66,"key":true,"q":"What is one practice the Mesopotamians used in contracts, trials, adoptions, and other official proceedings to remove doubt?","a":"They required witnesses for all legal proceedings","k":"witness | witnesses | witnessed | witnessing"},
+  {"id":"m67","section":"meso","num":67,"key":true,"q":"How could you tell someone was a slave in Mesopotamia?","a":"A unique hairstyle (the slave hairlock)","k":"hair | hairstyle | hairlock | haircut | hairdo | lock | shaved | braid | braided | ponytail"},
+  {"id":"m68","section":"meso","num":68,"key":false,"q":"Why would someone voluntarily become a slave?","a":"To pay off a debt or because they were starving for food","k":"debt | debts | owed | owe | pay | paying | money | starving | starve | starved | starvation | hunger | hungry | food | poor | poverty"},
+  {"id":"m69","section":"meso","num":69,"key":true,"q":"If a barber shaved off a slave’s hairlock, what was his punishment according to the law?","a":"They cut off the barber’s hand","k":"hand | hands"},
+  {"id":"m70","section":"meso","num":70,"key":false,"q":"What was unique about Mesopotamian marriage?","a":"It was an arrangement between families, not a romantic relationship","k":"arranged | arrangement | arrangements | families | family | parents | contract | business | deal | political | financial | negotiated"},
+  {"id":"m71","section":"meso","num":71,"key":true,"q":"What do we call the property that came with a woman when she married? It was actually her inheritance.","a":"A dowry","k":"dowry | dowries | dower"},
+  {"id":"m72","section":"meso","num":72,"key":false,"q":"What discipline did headmasters in a Mesopotamian school choose?","a":"Caning","k":"cane | caning | caned | canes | beat | beating | beaten | whip | whipping | whipped | flog | flogging | flogged | stick | rod | spank | spanking"},
+  {"id":"m73","section":"meso","num":73,"key":true,"q":"What language was taught in the schools?","a":"Sumerian","k":"sumerian | sumer | sumeria"},
+  {"id":"m74","section":"meso","num":74,"key":false,"q":"What was the name of the Mesopotamian school? Translated, it means “Tablet House.”","a":"Edubba","k":"edubba | eduba | dubba"},
+  {"id":"m75","section":"meso","num":75,"key":false,"q":"What courses were taught in a Mesopotamian school?","a":"Literature, math, and music","k":"Literature::literature | reading | writing | literary | poetry | stories | language | languages & Math::math | maths | mathematics | arithmetic | numbers & Music::music | singing | songs | song"},
+  {"id":"m76","section":"meso","num":76,"key":false,"q":"The Mesopotamian math system was based on what number, compared to ours, which is based on 10?","a":"60","k":"60 | sexagesimal"},
+  {"id":"m77","section":"meso","num":77,"key":false,"q":"When a Mesopotamian king was away fighting a battle, who ruled in his place?","a":"His queen","k":"queen | queens | wife"},
+  {"id":"m78","section":"meso","num":78,"key":true,"q":"What was the beverage of choice in Mesopotamia?","a":"Beer","k":"beer | beers | ale"},
+  {"id":"m79","section":"meso","num":79,"key":true,"q":"Why was beer healthier than drinking water?","a":"Fermentation killed the bacteria","k":"ferment | fermentation | fermented | fermenting | bacteria | bacterial | germs | germ | alcohol | microbes"},
+  {"id":"m80","section":"meso","num":80,"key":true,"q":"What was the favorite fruit in Mesopotamia?","a":"Dates","k":"date | dates"},
+  {"id":"c1","section":"emp","num":1,"key":true,"q":"In 1595 BC, Babylon was conquered by King Mursili. What was his kingdom?","a":"The Hittites","k":"hittite | hittites | hatti"},
+  {"id":"c2","section":"emp","num":2,"key":true,"q":"When Babylon was captured, the statue of their god was taken prisoner. Which god was that?","a":"Marduk","k":"marduk | murdoc | merodach"},
+  {"id":"c3","section":"emp","num":3,"key":true,"q":"This Hittite king conquered Babylon in 1595 BC and was murdered on his return home by his brother-in-law. Who was he?","a":"Mursili I","k":"mursili | mursilis","also":[85]},
+  {"id":"c4","section":"emp","num":4,"key":true,"q":"What was Telepinu’s proclamation?","a":"He set up a line of succession","k":"succession | successor | successors | heir | heirs | inherit | inheritance | next king | choose king | choosing king | pick king | picking king | royal line | line","also":[86]},
+  {"id":"c5","section":"emp","num":5,"key":true,"q":"What was the name of the Hittite king who killed his brother and returned the Hittite Empire to greatness?","a":"Suppiluliuma","k":"suppiluliuma | suppiluluma | shuppiluliuma"},
+  {"id":"c6","section":"emp","num":6,"key":true,"q":"Which Hittite king lost his two brothers and his wife (to black magic), had a stroke, and left us recorded prayers that read like psalms?","a":"Mursili II","k":"mursili & II::ii | ll | 2 | 2nd | second"},
+  {"id":"c7","section":"emp","num":7,"key":false,"q":"What was the name of the land where the Hittites lived?","a":"Hatti","k":"hatti"},
+  {"id":"c8","section":"emp","num":8,"key":true,"q":"What was the capital of the Hittites, where their mountain fortress was built?","a":"Hattusha","k":"hattusha | hattusa | hatusha | hatusa | hattush"},
+  {"id":"c9","section":"emp","num":9,"key":false,"q":"When did a Hittite king become a god?","a":"Upon his death","k":"death | died | die | dies | dead | dying | passed"},
+  {"id":"c10","section":"emp","num":10,"key":false,"q":"Besides being great warriors, what political tool did the Hittites use to build and defend their empire?","a":"Treaties","k":"treaty | treaties | agreement | agreements | alliance | alliances"},
+  {"id":"c11","section":"emp","num":11,"key":true,"q":"Why did Suppiluliuma decide to invade Egypt?","a":"To avenge the death of his son","k":"avenge | avenged | avenging | revenge | vengeance | son | prince | retaliate | retaliation"},
+  {"id":"c12","section":"emp","num":12,"key":true,"q":"What was an unforeseen consequence of this action?","a":"A plague","k":"plague | plagues | disease | diseases | epidemic | sickness | illness | pandemic | pestilence | virus"},
+  {"id":"c13","section":"emp","num":13,"key":true,"q":"Who was Pudahepa, and why is she important?","a":"Wife of Hattusili III (the Kadesh general and later king). She was very influential, married for love, and re-ordered the Hittite pantheon of gods.","k":"wife | queen | married | hattusili | hattushili | influential | pantheon | love"},
+  {"id":"c14","section":"emp","num":14,"key":false,"q":"The Hittites called their land the land of “____” gods. How many?","a":"A thousand gods","k":"thousand | 1000"},
+  {"id":"c15","section":"emp","num":15,"key":true,"q":"Who did the Hittites fight at the Battle of Kadesh?","a":"The Egyptians","k":"egypt | egyptian | egyptians"},
+  {"id":"c16","section":"emp","num":16,"key":false,"q":"Hittite is an Indo-European language, a distant cousin of English. Name at least two of the other Indo-European languages.","a":"Greek, Latin, Spanish, German, French, Italian, Farsi","k":"greek & latin & spanish & german & french & italian & farsi | persian & russian & hindi & dutch & portuguese & polish & urdu & swedish & danish & norwegian & irish & romanian & welsh & kurdish","need":2},
+  {"id":"c17","section":"emp","num":17,"key":false,"q":"Name one way that two kings could achieve a political alliance.","a":"Marriage","k":"marriage | marriages | marry | married | marrying | intermarriage | wedding | weddings"},
+  {"id":"c18","section":"emp","num":18,"key":true,"q":"The “Big Five,” known as the Great Kings, included who?","a":"Egypt, Mittani, Babylon, Hatti, and Alashiya (Cyprus). Cyprus had COPPER, which was needed for bronze.","k":"Egypt::egypt | egyptian & Mittani::mittani | mitanni | mittanni & Babylon::babylon | babylonia | babylonian & Hatti::hatti | hittite | hittites & Alashiya::alashiya | alashia | alasiya | cyprus"},
+  {"id":"c19","section":"emp","num":19,"key":true,"q":"Egypt was the richest of the Great Kings. Why?","a":"It had gold","k":"gold"},
+  {"id":"c20","section":"emp","num":20,"key":true,"q":"The 5 Great Kings addressed each other in a special way, claiming friendship and enduring peace between their kingdoms. What was this term?","a":"Brother","k":"brother | brothers | brotherhood"},
+  {"id":"c21","section":"emp","num":21,"key":true,"q":"What was the official language of diplomacy?","a":"Akkadian","k":"akkadian | akkad | akadian"},
+  {"id":"c22","section":"emp","num":22,"key":true,"q":"What was the name of the people who invaded and conquered the Hittites and tried, but failed, to defeat Egypt?","a":"The Sea Peoples","k":"sea people | sea peoples | seapeople | seapeoples"},
+  {"id":"c23","section":"emp","num":23,"key":false,"q":"Which people in the Levant had a strong literary tradition, recording not only their history but also their theological beliefs in written form?","a":"The Hebrews","k":"hebrew | hebrews | israelite | israelites | jews | jewish"},
+  {"id":"c24","section":"emp","num":24,"key":true,"q":"One of the groups in the Levant became a major power and controlled a large stretch of land. What was their language, which was spoken by most Near Eastern peoples and was still spoken in the region more than a thousand years later?","a":"Aramaic","k":"aramaic | aramean | arameans | aramaean | aramaeans"},
+  {"id":"c25","section":"emp","num":25,"key":true,"q":"When the Israelites returned to the Levant around 1200 BC, who did they have to evict in order to settle the land?","a":"The Canaanites","k":"canaanite | canaanites | canaan | cananites"},
+  {"id":"c26","section":"emp","num":26,"key":false,"q":"The Israelites were organized into how many tribes?","a":"12","k":"12"},
+  {"id":"c27","section":"emp","num":27,"key":true,"q":"The first king of the Israelites was Saul. Who was second? Who was third?","a":"David (second), then Solomon (third)","k":"david & solomon"},
+  {"id":"c28","section":"emp","num":28,"key":true,"q":"Who wrote the book of Proverbs?","a":"Solomon","k":"solomon"},
+  {"id":"c29","section":"emp","num":29,"key":true,"q":"Who established Jerusalem as the capital of the Israelites?","a":"David","k":"david"},
+  {"id":"c30","section":"emp","num":30,"key":true,"q":"Who returned the Ark of the Covenant to Jerusalem?","a":"David","k":"david"},
+  {"id":"c31","section":"emp","num":31,"key":true,"q":"Who built the Temple in Jerusalem?","a":"Solomon","k":"solomon"},
+  {"id":"c32","section":"emp","num":32,"key":true,"q":"The kingdom broke apart when Solomon died in 922 BC. Which two tribes remained in the south?","a":"Judah and Benjamin","k":"judah | judea | judean & benjamin"},
+  {"id":"c33","section":"emp","num":33,"key":true,"q":"What was the name of the northern kingdom?","a":"Israel","k":"israel!"},
+  {"id":"c34","section":"emp","num":34,"key":true,"q":"What was the name of the southern kingdom?","a":"Judah","k":"judah | judea | judean"},
+  {"id":"c35","section":"emp","num":35,"key":false,"q":"The first book of the Bible is Genesis. What does it mean?","a":"Beginning or birth","k":"beginning | beginnings | begin | begins | birth | origin | origins | start | creation | born"},
+  {"id":"c36","section":"emp","num":36,"key":false,"q":"The second book of the Bible is Exodus. What does it mean?","a":"Departure","k":"departure | depart | departing | leaving | leave | exit | going out | left"},
+  {"id":"c37","section":"emp","num":37,"key":true,"q":"What is the name of the first 5 books of the Bible?","a":"The Pentateuch (also called the Torah)","k":"pentateuch | torah | tora"},
+  {"id":"c38","section":"emp","num":38,"key":false,"q":"What are the first 5 books of the Bible?","a":"Genesis, Exodus, Leviticus, Numbers, Deuteronomy","k":"genesis & exodus & leviticus & numbers & deuteronomy"},
+  {"id":"c39","section":"emp","num":39,"key":false,"q":"In which books of the Bible do we read about the Ten Commandments?","a":"Exodus and Deuteronomy","k":"exodus & deuteronomy"},
+  {"id":"c40","section":"emp","num":40,"key":false,"q":"The people wanted to build a tower so high it would reach God, but God jumbled their languages and caused them to speak different languages. What is the name of this structure?","a":"The Tower of Babel","k":"babel"},
+  {"id":"c41","section":"emp","num":41,"key":true,"q":"According to tradition, Abraham had two sons. Who were they? Which one was the father of the Israelites?","a":"Isaac and Ishmael. Isaac fathered the Israelites; Ishmael fathered the Arabs.","k":"isaac & ishmael"},
+  {"id":"c42","section":"emp","num":42,"key":true,"q":"Who was the son that was sold into slavery in Egypt?","a":"Joseph","k":"joseph | josef"},
+  {"id":"c43","section":"emp","num":43,"key":true,"q":"Who is the hero of the book of Deuteronomy?","a":"Moses","k":"moses | moshe"},
+  {"id":"c44","section":"emp","num":44,"key":true,"q":"Which other ancient Mesopotamian king was also “rescued from a reed basket” as an infant?","a":"Sargon","k":"sargon"},
+  {"id":"c45","section":"emp","num":45,"key":true,"q":"What is the central event in the history of the Jews?","a":"The escape from Egypt","k":"exodus | escape | escaped | escaping | fled | flee | fleeing | left egypt | leaving egypt | leave egypt | out egypt | freedom | freed | passover"},
+  {"id":"c46","section":"emp","num":46,"key":true,"q":"What is the basic difference between the 10 Commandments and the Code of Hammurabi?","a":"The 10 Commandments were absolute laws, with no ifs, ands, or buts. Hammurabi’s laws were conditional: if this is done, then this should be the punishment.","k":"absolute | absolutes | unconditional | conditional | conditionals | conditions | condition | if | ifs | exceptions | punishment | punishments | consequences"},
+  {"id":"c47","section":"emp","num":47,"key":true,"q":"Who was the god of the Assyrians?","a":"Ashur","k":"ashur | assur"},
+  {"id":"c48","section":"emp","num":48,"key":false,"q":"This Assyrian leader, known for his brutality, built his nation into an empire. Who was he?","a":"Ashurnasirpal","k":"ashurnasirpal | nasirpal | ashurnazirpal | assurnasirpal"},
+  {"id":"c49","section":"emp","num":49,"key":true,"q":"One of the last Assyrian kings, even though he was brutal, could read and made the world’s first library. Who was he?","a":"Ashurbanipal","k":"ashurbanipal | banipal | assurbanipal"},
+  {"id":"c50","section":"emp","num":50,"key":true,"q":"Which kingdom of Israel, north or south, fell to the Assyrians? Who conquered the south?","a":"The north fell to the Assyrians. The Babylonians conquered the south.","k":"North::north | northern | israel! & Babylonians::babylon | babylonia | babylonian | babylonians | chaldeans"},
+  {"id":"c51","section":"emp","num":51,"key":false,"q":"What did the Assyrians do after they conquered the northern kingdom?","a":"They took 10,000 captives and replaced them with peoples from other parts of their empire","k":"captive | captives | prisoner | prisoners | deported | deportation | exiled | exile | removed | relocated | resettled | replaced | replace | enslaved | slaves | 10000 | taken | took | moved | forced"},
+  {"id":"c52","section":"emp","num":52,"key":true,"q":"Besides its army, how did Assyria control its huge territory?","a":"A well-organized system of government with expert advisors and scribes","k":"government | governments | governor | governors | administration | bureaucracy | advisor | advisors | adviser | advisers | scribe | scribes | officials | organized | organised | organization | system | provinces"},
+  {"id":"c53","section":"emp","num":53,"key":false,"q":"The Assyrian empire reached its biggest size under which king?","a":"Sennacherib","k":"sennacherib"},
+  {"id":"c54","section":"emp","num":54,"key":false,"q":"How did Sennacherib die?","a":"He was killed by one of his sons","k":"son | sons | child | children | kid | kids | offspring"},
+  {"id":"c55","section":"emp","num":55,"key":false,"q":"When you handle someone with kid gloves, what does that mean?","a":"Kid gloves were made from the skin of a baby lamb, so it means to treat someone gently and delicately","k":"gentle | gently | gentleness | delicate | delicately | careful | carefully | soft | softly | tender | tenderly | kindly | tactful | sensitive"},
+  {"id":"c56","section":"emp","num":56,"key":true,"q":"In 612 BC, who conquered the Assyrians?","a":"The Babylonians, with some of their allies","k":"babylon | babylonian | babylonians | babylonia | chaldean | chaldeans"},
+  {"id":"c57","section":"emp","num":57,"key":true,"q":"Who was the leader of the Babylonians when this happened?","a":"Nebuchadnezzar","k":"nebuchadnezzar | nebuchadrezzar | nebakanezzar | nebuchadnetsar"},
+  {"id":"c58","section":"emp","num":58,"key":true,"q":"What do modern historians call Nebuchadnezzar’s rule, to distinguish it from the earlier rule by the Babylonians?","a":"The Neo-Babylonian Empire","k":"neo | neobabylonian | neobabylonia | new babylonian | new babylon | chaldean"},
+  {"id":"c59","section":"emp","num":59,"key":true,"q":"Who was the next great Babylonian leader after Nebuchadnezzar?","a":"Nabonidus","k":"nabonidus | nabunaid"},
+  {"id":"c60","section":"emp","num":60,"key":true,"q":"Why did the Babylonian people not like Nabonidus?","a":"He stayed away from Babylon for 10 years, so they could not celebrate the New Year’s festival to Marduk. He also probably took command by murdering the ruling king, and he was an Assyrian by birth.","k":"away | absent | abroad | left | leave | years | festival | festivals | celebrate | celebrated | new year | newyear | missed | murder | murdered | murdering | killed | kill | assassinated | usurped | usurper | assyrian | assyria | foreigner | foreign | outsider"},
+  {"id":"c61","section":"emp","num":61,"key":true,"q":"Which god did Nabonidus seem to prefer to Marduk?","a":"Sin, the Moon god","k":"sin | moon | nanna | suen"},
+  {"id":"c62","section":"emp","num":62,"key":false,"q":"Why did Nabonidus not like the yearly ceremony for Marduk?","a":"The priest hit him hard, he had to humble himself, and the priests dragged him by the ear","k":"hit | hits | slap | slapped | slapping | struck | strike | hurt | pain | painful | humble | humbled | humiliate | humiliated | humiliating | humiliation | humbling | drag | dragged | dragging | ear | ears | embarrass | embarrassed | embarrassing | beaten | beat | disgrace | disgraced"},
+  {"id":"c63","section":"emp","num":63,"key":true,"q":"Who conducted a propaganda campaign against Nabonidus and then took over his kingdom?","a":"Cyrus","k":"cyrus! | koresh"},
+  {"id":"c64","section":"emp","num":64,"key":true,"q":"Where did Cyrus come from?","a":"Persia (Iran, near the Zagros Mountains)","k":"persia | persian | persians | iran | zagros | parsa"},
+  {"id":"c65","section":"emp","num":65,"key":true,"q":"Cyrus conquered this kingdom in Anatolia with the help of an unusual animal. What animal?","a":"Camels (the Lydian horses were afraid of them)","k":"camel | camels"},
+  {"id":"c66","section":"emp","num":66,"key":true,"q":"Who was the king of the Lydians who was saved “at the last minute” from being burned alive by a storm that put out the flames?","a":"King Croesus","k":"croesus | kroisos"},
+  {"id":"c67","section":"emp","num":67,"key":true,"q":"What happened to King Croesus after he was spared from the flames?","a":"He became one of Cyrus’s trusted advisors","k":"advisor | advisors | adviser | advisers | advised | advise | advising | advice | counselor | counsellor | counselors | trusted | helper | helped | friend | aide | servant"},
+  {"id":"c68","section":"emp","num":68,"key":true,"q":"Who was the first nation Cyrus conquered, which also happened to be his nearest neighbor?","a":"The Medes","k":"medes | mede | media | median | medians"},
+  {"id":"c69","section":"emp","num":69,"key":true,"q":"Which people felt that the conquest of Babylon by Cyrus was an answer to their prayers?","a":"The Jews in Babylon","k":"jew | jews | jewish | judeans | judean | hebrew | hebrews | israelite | israelites"},
+  {"id":"c70","section":"emp","num":70,"key":true,"q":"After Cyrus’s death, who eventually emerged as the leader of the Persians?","a":"Darius","k":"darius"},
+  {"id":"c71","section":"emp","num":71,"key":true,"q":"Because he wanted to be remembered in history as one of the greatest kings of all time, what did Darius do?","a":"He had an inscription carved high on a mountain at a place called Bisitum","k":"inscription | inscriptions | inscribed | carved | carve | carving | carvings | relief | mountain | mountains | mountainside | bisitum | behistun | behistan | cliff | rock | engraved | monument"},
+  {"id":"c72","section":"emp","num":72,"key":true,"q":"Why were we able to read the Bisitum Relief?","a":"It carved the same message in 3 languages: Persian, Akkadian, and Elamite","k":"3 | trilingual | languages | language | persian | akkadian | elamite | multiple | several | different"},
+  {"id":"c73","section":"emp","num":73,"key":true,"q":"Which god did Darius worship?","a":"Ahura Mazda","k":"ahura | mazda | ahuramazda | ormazd | ohrmazd"},
+  {"id":"c74","section":"emp","num":74,"key":false,"q":"Who was the influential Persian teacher who preached about Ahura Mazda, the good, against “The Lie”?","a":"Zoroaster","k":"zoroaster | zarathustra"},
+  {"id":"c75","section":"emp","num":75,"key":false,"q":"What was Darius’s capital city, which set a new standard for grandeur?","a":"Persepolis","k":"persepolis"},
+  {"id":"c76","section":"emp","num":76,"key":false,"q":"The Persian empire was divided into 20 provinces, each with an appointed governor. What was this system known as?","a":"A satrap (the governor of a province)","k":"satrap | satraps | satrapy | satrapies"},
+  {"id":"c77","section":"emp","num":77,"key":true,"q":"Who succeeded Darius and tried to avenge his father’s loss to the Greeks?","a":"Xerxes","k":"xerxes | ahasuerus"},
+  {"id":"c78","section":"emp","num":78,"key":true,"q":"Which Greek conquered the Persians with the decisive Battle of Gaugamela?","a":"Alexander (the Great)","k":"alexander | alex"},
+  {"id":"c79","section":"emp","num":79,"key":true,"q":"Who is the god of the Persians?","a":"Ahura Mazda","k":"ahura | mazda | ahuramazda | ormazd | ohrmazd"},
+  {"id":"c80","section":"emp","num":80,"key":true,"q":"Who is the main god of the Babylonians?","a":"Marduk (spelled “Murdoc” in the study guide)","k":"marduk | murdoc | merodach"},
+  {"id":"c81","section":"emp","num":81,"key":true,"q":"Who is the main god of the Assyrians?","a":"Ashur","k":"ashur | assur"},
+  {"id":"c82","section":"emp","num":82,"key":true,"q":"Who is the main god of the Mesopotamians?","a":"Enlil","k":"enlil"},
+  {"id":"c83","section":"emp","num":83,"key":true,"q":"Who is the God of the Jews?","a":"Yahweh","k":"yahweh | yhwh | jehovah | jehova"},
+  {"id":"c84","section":"emp","num":84,"key":true,"q":"Who is the goddess of love and war?","a":"Ishtar","k":"ishtar | inanna"},
+  {"id":"x1","section":"map","num":1,"key":true,"q":"MAP: Name the two great rivers of Mesopotamia.","a":"The Tigris and the Euphrates","k":"tigris & euphrates"},
+  {"id":"x2","section":"map","num":2,"key":true,"q":"MAP: Name the five bodies of water to know on the map (four seas and one gulf).","a":"Black Sea, Red Sea, Mediterranean Sea, Caspian Sea, Persian Gulf","k":"Black::black & Red::red & Mediterranean::mediterranean | med | mediterranian & Caspian::caspian | caspean & Persian Gulf::persian | gulf"}
+ ]
+}

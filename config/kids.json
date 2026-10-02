@@ -1,0 +1,102 @@
+{
+  "site": {
+    "name": "Quest Hall",
+    "tagline": "Level up your learning"
+  },
+  "kids": [
+    {
+      "id": "bretton",
+      "name": "Bretton",
+      "hubTitle": "Bretton’s HQ",
+      "tagline": "Pick a subject. Pick a challenge. Level up.",
+      "school": { "name": "Trinity Academy", "city": "Falls Church", "mark": "shield", "logo": null },
+      "theme": {
+        "id": "bretton",
+        "color": "#070B16",
+        "statusBar": "black-translucent",
+        "fonts": "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Lexend:wght@400;500;600;700&display=swap"
+      },
+      "subjects": ["history", "math", "science", "bible", "latin", "english", "literature", "geography"],
+      "world": {
+        "hero": "mountain",
+        "heroLabel": "Your climb",
+        "brandIcon": "peak",
+        "ranks": [
+          { "n": "Rookie", "d": "Just getting started", "xp": 0 },
+          { "n": "Scout", "d": "Finding your way", "xp": 2500 },
+          { "n": "Challenger", "d": "Taking on the big ones", "xp": 7000 },
+          { "n": "Veteran", "d": "You know the ropes", "xp": 13000 },
+          { "n": "Elite", "d": "Top of the leaderboard", "xp": 21000 },
+          { "n": "Master", "d": "Nothing rattles you", "xp": 31000 },
+          { "n": "Champion", "d": "Unbeaten", "xp": 43000 },
+          { "n": "Legend", "d": "You reached the summit", "xp": 58000 }
+        ],
+        "badges": {
+          "first": { "n": "First Win" }, "s6": { "n": "On a Roll" }, "s12": { "n": "Unstoppable" },
+          "flawless": { "n": "Flawless Run" }, "k25": { "n": "Key Keeper" }, "gate": { "n": "Gatekeeper" },
+          "redeem": { "n": "Comeback" }, "scholar": { "n": "Completionist" }
+        },
+        "quips": {
+          "ok": ["Boom. Nailed it.", "Clean hit.", "Easy work.", "You knew that one.", "Locked in."],
+          "part": ["So close. Check what is missing.", "Half the points. Grab the rest next time."],
+          "bad": ["Miss. It goes into your Study Pile.", "Shake it off. It will be back."],
+          "skip": ["Good call checking. Read it and it sticks.", "No sweat. Learn it, then crush it next time."]
+        },
+        "headlines": {
+          "perfect": "Flawless run. Not one miss.", "great": "Elite round.", "good": "Solid round. Keep climbing.",
+          "ok": "Getting there. Review the cards below.", "low": "Rough round. Review below and run it back.",
+          "replayMissed": "Replay done. Keep grinding.", "replayClean": "Redeemed. Every one right."
+        },
+        "lexicon": { "pile": "Study Pile", "start": "Start round" },
+        "confetti": ["--accent", "--accent-hi", "--action-hi", "--focus", "--ok"]
+      }
+    },
+    {
+      "id": "audrey",
+      "name": "Audrey",
+      "hubTitle": "Audrey’s Study Garden",
+      "tagline": "Pick a subject, pick a quiz, and watch your garden bloom.",
+      "school": { "name": "Alexandria Classical Christian Academy", "city": "Alexandria", "mark": "laurel", "logo": null },
+      "theme": {
+        "id": "audrey",
+        "color": "#FFF6FB",
+        "statusBar": "default",
+        "fonts": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      },
+      "subjects": ["history", "math", "science", "bible", "latin", "english", "literature", "geography"],
+      "world": {
+        "hero": "garden",
+        "heroLabel": "Your flower",
+        "brandIcon": "flower",
+        "ranks": [
+          { "n": "Seedling", "d": "Just planted", "xp": 0 },
+          { "n": "Sprout", "d": "Reaching for the sun", "xp": 2500 },
+          { "n": "Bud", "d": "Almost ready to open", "xp": 7000 },
+          { "n": "Bloom", "d": "Your very first flower", "xp": 13000 },
+          { "n": "Blossom", "d": "In full color", "xp": 21000 },
+          { "n": "Bouquet", "d": "A bunch of brilliant answers", "xp": 31000 },
+          { "n": "Garden", "d": "A whole garden of knowledge", "xp": 43000 },
+          { "n": "Wonderland", "d": "The most magical garden of all", "xp": 58000 }
+        ],
+        "badges": {
+          "first": { "n": "First Gold Star" }, "s6": { "n": "Sparkler" }, "s12": { "n": "Shooting Star" },
+          "flawless": { "n": "Perfect Bloom" }, "k25": { "n": "Star Collector" }, "gate": { "n": "Garden Gate" },
+          "redeem": { "n": "Second Bloom" }, "scholar": { "n": "Master Gardener" }
+        },
+        "quips": {
+          "ok": ["Beautiful!", "You are blooming!", "A sparkling answer.", "So smart.", "Yes! That is it."],
+          "part": ["Almost! Look at what is missing.", "Half a bloom. You are close."],
+          "bad": ["Not quite. It goes into your Practice Pile.", "That is okay. It will come back for another try."],
+          "skip": ["Good idea to check. Read it and you will remember.", "No problem. Learn it now and try again later."]
+        },
+        "headlines": {
+          "perfect": "A perfect bloom!", "great": "Beautiful round!", "good": "Lovely work. Keep growing.",
+          "ok": "Growing nicely. Look at the cards below.", "low": "Every gardener starts somewhere. Review below.",
+          "replayMissed": "Replay done. Keep growing.", "replayClean": "All bloomed. Every one right."
+        },
+        "lexicon": { "pile": "Practice Pile", "start": "Start a round" },
+        "confetti": ["--accent", "--accent-hi", "--action", "--action-hi", "--ok", "--warn"]
+      }
+    }
+  ]
+}

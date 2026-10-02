@@ -1,0 +1,103 @@
+/*
+ * Quest Hall base styles: reset, buttons, chips, panels, bars, medals.
+ * Nothing here hard-codes a colour. Every colour is a token that a kid theme
+ * (themes/bretton.css, themes/audrey.css) or a quiz "world" (world.css) defines.
+ *
+ * TOKEN CONTRACT (a theme must define all of these)
+ *   page      --bg --bg-glow --bg-glow-0 --ink --ink-mute --line --w1 --w2 --w3 --w4 --shadow
+ *   accent    --accent --accent-hi --accent-lo --accent-ink --accent-soft --accent-soft-line
+ *             --accent-text (headings, big numbers on the page)  --accent-text-2 (small eyebrows)
+ *   popovers  --pop-bg --pop-line
+ *   paper     --paper-1 --paper-2 --paper-3 --paper-ink --paper-mute --paper-line --paper-inset
+ *             --paper-rim --input-bg --input-ink --input-ph --input-line --input-ro-bg
+ *   buttons   --action --action-hi --action-lo --action-ink --action-edge --action-ring
+ *   status    --ok --ok-deep --ok-glow --ok-soft  --warn --warn-deep --warn-glow --warn-soft
+ *             --bad --bad-deep --bad-glow --bad-soft
+ *   misc      --focus --hint-bg --hint-ink --glow-key
+ *   type      --font-display --font-body --display-weight
+ *   shape     --r-card --r-tablet --r-btn --r-input --r-chip
+ *   deco      --band --band-h --band-line
+ *   hero      --hero-lit-1 --hero-lit-2 --hero-lit-stroke --hero-dim-1 --hero-dim-2 --hero-dim-stroke
+ *             --hero-stair-1 --hero-stair-2 --hero-stair-stroke --hero-joint --hero-ink --hero-snow
+ *             --hero-leaf --hero-leaf-deep --hero-center
+ */
+:root {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; background: var(--bg); }
+[hidden] { display: none !important; }
+img, svg { max-width: 100%; }
+body {
+  margin: 0; min-height: 100%;
+  background-color: var(--bg); color: var(--ink);
+  font: 400 16px/1.5 var(--font-body);
+  background-image: radial-gradient(1100px 520px at 50% -140px, var(--bg-glow) 0%, var(--bg-glow-0) 72%);
+  background-repeat: no-repeat;
+}
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tnum { font-variant-numeric: tabular-nums; }
+.muted { color: var(--ink-mute); }
+.small { font-size: .88rem; }
+.shell { width: 100%; max-width: 1040px; margin-inline: auto; padding-inline: 16px; padding-block: 0 48px; }
+.band { height: var(--band-h, 28px); background: var(--bg) var(--band) repeat-x center; border-bottom: 1px solid var(--band-line); }
+.eyebrow { font-size: .74rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-text-2); }
+.lbl { font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+
+/* panels and buttons */
+.panel { background: linear-gradient(180deg, var(--w2), var(--w1)); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; }
+.panel h2 { font: var(--display-weight, 400) 1.25rem/1.2 var(--font-display); color: var(--accent-text); margin-bottom: 6px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 50px; padding: 13px 22px; border: 0; border-radius: var(--r-btn);
+  background: var(--w2); font-weight: 600; font-size: 1rem; line-height: 1.1; cursor: pointer; text-decoration: none;
+  transition: transform .08s, background .15s, box-shadow .08s;
+}
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn:hover { background: var(--w3); }
+.btn:active { transform: translateY(2px); }
+.btn.primary { background: linear-gradient(180deg, var(--accent-hi), var(--accent)); color: var(--accent-ink); box-shadow: 0 4px 0 var(--accent-lo), 0 12px 24px var(--shadow); }
+.btn.primary:hover { filter: brightness(1.06); }
+.btn.primary:active { box-shadow: 0 1px 0 var(--accent-lo), 0 6px 12px var(--shadow); }
+.btn.ghost { background: transparent; box-shadow: inset 0 0 0 2px var(--w4); }
+.btn.ghost:hover { background: var(--w1); }
+.btn.big { min-height: 58px; font-size: 1.1rem; width: 100%; }
+.btn[disabled] { opacity: .42; cursor: not-allowed; transform: none; }
+.btn.quiet { background: transparent; padding-inline: 10px; color: var(--ink-mute); text-decoration: underline; text-underline-offset: 3px; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { min-height: 44px; padding: 9px 16px; border-radius: var(--r-chip); background: var(--w1); border: 1px solid var(--line); font-weight: 500; font-size: .95rem; cursor: pointer; }
+.chip:hover { background: var(--w2); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.field-label { display: block; margin: 16px 0 8px; }
+.bar { height: 12px; border-radius: 99px; background: var(--w3); overflow: hidden; position: relative; }
+.bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent-lo), var(--accent-hi)); transition: width .8s cubic-bezier(.2, .8, .2, 1); }
+.bar.ok i { background: linear-gradient(90deg, var(--ok-deep), var(--ok)); }
+.bar .tick { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); opacity: .7; }
+.stars { display: flex; gap: 8px; }
+.stars svg { width: 44px; height: 44px; }
+.star-off { fill: var(--w3); }
+.star-on { fill: var(--accent); filter: drop-shadow(0 0 10px var(--accent-soft-line)); }
+.medal { display: flex; gap: 10px; align-items: flex-start; min-width: 0; }
+.medal-icon { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle at 35% 30%, var(--accent-hi), var(--accent) 55%, var(--accent-lo)); color: var(--accent-ink); box-shadow: 0 0 0 3px var(--accent-soft-line); }
+.medal-icon svg { width: 22px; height: 22px; }
+.medal.locked .medal-icon { background: var(--w1); color: var(--ink-mute); box-shadow: none; border: 1px dashed var(--w4); opacity: .8; }
+.medal b { display: block; font-size: .9rem; line-height: 1.2; }
+.medal span { display: block; font-size: .78rem; color: var(--ink-mute); line-height: 1.3; margin-top: 2px; }
+.medal.locked b { color: var(--ink-mute); }
+.foot { margin-top: 28px; text-align: center; font-size: .8rem; color: var(--ink-mute); }
+
+/* school wordmark: small, quiet, and always the same shape */
+.school { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-mute); text-decoration: none; line-height: 1.15; min-width: 0; }
+.school svg, .school img { width: 26px; height: 26px; flex: none; opacity: .9; }
+.school .st { display: block; min-width: 0; }
+.school b { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); opacity: .82; overflow-wrap: anywhere; }
+.school i { display: block; font-style: normal; font-size: .7rem; letter-spacing: .04em; }
+
+@media (min-width: 880px) { .shell { padding-inline: 24px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
